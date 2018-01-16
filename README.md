@@ -22,7 +22,7 @@ You can override these defaults with `out_avg_by` and `in_avg_by`
 
 ```hcl
 module "nomad_node_memory" {
-  source                      = "github.com/sprutner/tf_aws_datadog_scaler"
+  source                      = "github.com/sprutner/terraform-aws-datadog-autoscaling"
   name                        = "Memory"
   environment                 = "${var.environment}"
   asg_name                    = "${module.nomad_client.asg_name}"
